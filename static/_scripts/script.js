@@ -126,7 +126,7 @@ function wundergroundRequest(latitude, longitude) {
             var stationListLength = parsed_json['location']['nearby_weather_stations']['pws']['station'].length
 
             if (stationListLength > 0) {
-                var maxStationsAttempt = 3
+                var maxStationsAttempt = 4
                 var stationLimit = Math.min(maxStationsAttempt, stationListLength);
                 var nearStationsId = [];
                 for (var i = 0; i < stationLimit; i++) {
